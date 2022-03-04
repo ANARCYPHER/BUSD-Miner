@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+		
+		body {
+    /* font-family: 'Proxima Nova', Georgia, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+      background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+		
+	</style>
+	
+</head>
+
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="Hire Miners to earn Community Drive Token" name="description">
+	<meta name="image" content="images/opimage.png">
+	<!-- opengraph image -->
+	<meta property="og:image" content="images/opimage.png">
+	<meta property="og:title" content="Community Drive Factory">
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Hire Miners to earn Community Drive Token">
+	<meta property="og:url" content="index.html">
+	<!-- Twitter meta -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="index.html">
+	<meta name="twitter:title" content="Community Drive Factory">
+	<meta name="twitter:description" content="Hire Miners to earn Community Drive Token">
+	<meta name="twitter:image" content="images/opimage.png">
+	<!-- favicon files -->
+	 <link rel="icon" type="image/png" href="images/icon.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/icon.png" sizes="16x16" />
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<title>Community Drive Factory</title>
+	<!-- bootstrap core CSS -->
+	<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="assets/css/jumbotron-narrow.css" rel="stylesheet">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/custom.css" rel="stylesheet">
+	<!-- <link href="fonts.min.css" rel="stylesheet" type="text/css"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet">
+	
+	<style>
+	
+	@media only screen and (min-width: 850px) {
+		.custom-container {
+			background-color: silver;
+			padding-left: 64px;
+			padding-right: 64px;
+			color: black!important;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		body {
+			background: silver;
+			color: black!important;
+		}
+	}
+
+	.inlinestyle {
+		display: flex;
+		list-style: none;
+		padding: 16px;
+		
+	}
+	
+	.inlinestyle > a {
+		padding-right: 8px;
+	}
+	
+	p {
+		word-wrap: break-word;
+	}
+		
+		.miners-tally-container {
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    font-size: 5rem !important;
+    /* background-color: rgba(232,252,255, 0.4); */
+    padding: 0;
+    /* border-radius: 8px; */
+    min-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+		
+		.altcolor p {
+    font-size: 16px;
+    font-weight: 900;
+    color: #000; !important;
+    margin: 0;
+}
+		
+		.social-icons {
+    height: auto;
+    width: 30px;
+    float: left;
+    margin-right: 15px !important;
+    margin-top: -5px;
+}
+		
+		.altcolor {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 20px;
+    margin-bottom: 30px;
+    word-break: break-word;
+    border-radius: 6px;
+    /*box-shadow: 0px 1px 1px #000;*/
+    text-shadow: 0px 1px 0px #fff;
+			border: 1px solid #353535;
+}
+		
+		.navbar-default .navbar-nav > li > a {
+			color: #fff;}
+		.navbar-default .navbar-nav > li > a:hover {
+    color: #fc0;
+}
+		
+		.btn-buy {
+  color: #d5d5d5;
+  background-color: #000;
+  border-radius: 8px;
+  border-color: black;
+  font-weight: 600;
+  font-size: 22px !important;
+  width: 100%;
+  height: 60px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  transition: ease-in-out .4s;
+}
+		
+		.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+		
+	</style>
+</head>
+
+<body style="background-color: #000;">
+	
+	
+	<div class="modal" id="myModal">
+		<div class="modal-content" style="color:#000; text-align: center; font-size. 18px; font-weight: 700;">
+			<div id="modal-internal" style="color:#000;"></div>
+		</div>
+	</div>
+	
+	<div class="custom-container" style="background-color:transparent; font-color:#fff; margin: 0px auto; padding: 0px;">
+		
+		<nav class="navbar navbar-default" style="text-align: center; color: #fff; margin: 0px auto;  ">
+			<div class="container-fluid">
+				<div></div>
+				<div class="navbar-header">
+				</div>
+				<div class="mobile-align" style=" margin: 0px auto; position: relative;">
+					
+								<ul class="nav navbar-nav navbar-right font-weight-normal" style="width:100%; float: left; margin: 20px;">
+											<ul class="nav navbar-nav navbar-right font-weight-normal">
+													<ul class="nav navbar-nav navbar-right font-weight-normal">
+														
+														<li>
+											<a class="social-pad" href="/"><img style="border:1px solid #fff; border-radius: 50px; background-color: #fff;" class="social-icons" src="/images/BUSD.png" width="32">CDT</a>
+														</li>
+														
+										<li>
+											<a class="social-pad" href="/busd"><img style="border:1px solid #fff; border-radius: 50px; background-color: #fff;" class="social-icons" src="/images/BUSD.png" width="32">BUSD</a>
+														</li>
+										<li>
+											<a class="social-pad" href="#"><img style="border:1px solid #fff; border-radius: 50px; background-color: #fff;" class="social-icons" src="/images/SHIB.png" width="32">(SOON)</a>
+														</li>
+										<li>
+											<a class="social-pad" href="#"><img style="border:1px solid #fff; border-radius: 50px; background-color: #fff;" class="social-icons" src="/images/usdt.png" width="32">(SOON)</a>
+														</li>			
+										<li><a class="social-pad" style="color: #fc0;" href="/faq.html"><img style="width:34px;" alt="FAQ" class="social-icons" src="/faq.png"><span
+													class="">FAQ</span></a></li>
+														<li><a class="social-pad" style="color: #fc0;" href="/how to work.html"><img style="width:40px;" alt="How To" class="social-icons" src="/how.png"><span
+													class="">How To</span></a></li>
+											</ul>
+						</ul>
+
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	<div class="custom-container" style="background-color:#fc0; border-radius: 10px; font-color:#fff; padding: 30px; margin: auto;">
+		
+		<div>
+			<ul style="display:none;" class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
+				<li role="presentation" class="active"><a href="index.html#home" id="miners-tab" role="tab" data-toggle="tab"
+						aria-controls="home" aria-expanded="true">BUSD Factory</a></li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="miners-tab">
+
+
+					<div class="banner">
+						<!--/<img width="350px" src="images/Logo%20Horizontaal.png" alt="">-->
+					</div>
+					<div>
+						<div class="container-fluid miners-tally-container">
+							<img alt="Workers" class="icon" src="images/worker.png" style="height: 60px;width: 63px;">
+							<h2 class="tally-text">You have <u><span class="num-miners">0</span></u> Workers Hired </h2>
+						</div>
+						<div class="digging-mined-container">
+							<div class="custom-row">
+								<img alt="Digging" class="icon" src="images/speed.png">
+								<div class="dm-container-right">
+									<h2>Production Speed</h2>
+									<p><span id="production-rate">0</span> BUSD / HOUR</p>
+								</div>
+							</div>
+							<div class="custom-row">
+								<img alt="Produced" class="icon" src="images/produced.png">
+								<div class="dm-container-right">
+									<h2>Ready for payout</h2>
+									<p style=""><span id="sell-price">?</span> BUSD</p>
+									<p style=""><span id="until-full">?</span> until full</p>
+								</div>
+							</div>
+						</div>
+						
+						<br><br>
+
+						<div class="spend-container">
+							<div class="spend-input-continer">
+								<label for="approve">1. Enter Max BUSD Amount to Spend & Click Approve Below</label>
+								<div class="spend-input">
+									<input class="form-control" id="spend-allowance" name="approve" onchange="" step="1000"
+									type="number" value="1000">
+									<span class="bnb-text">BUSD</span> 
+													</div>
+									<button class="btn btn-lg btn-buy" onclick="approve()" role="button">
+								Approve Spend
+							</button>
+							<div style="font-weight: bold;color: green;text-align: center;padding: 16px;" id="approvedValue"></div>
+							<p id="spend-limit"></p>
+
+								<label for="spend">2. Enter BUSD Amount To invest & Click Hire Workers Below</label>
+								<div class="spend-input">
+									<input class="form-control" id="eth-to-spend" name="spend" onchange="updateBuyPrice()" step="100"
+									type="number" value="50">
+									<span class="bnb-text">BUSD</span> 
+								</div>
+							</div>
+							<div id="compoundWarning" style="display: none; color: blue; padding: 8px;">Information: You have unpaid BUSD. A buy will reinvest this tokens as well!</div>
+							<button id="buyButton" class="btn btn-lg btn-buy" onclick="buyEggs2()" role="button">
+								Hire <span id="eggs-to-buy-2">?</span> Workers
+							</button>
+						</div>
+						<div class="other-button-container">
+							<button class="btn btn-lg btn-hatch" onclick="hatchEggs1()"
+									role="button">Hire more Workers</button>
+							<button class="btn btn-lg btn-sell"
+									onclick="sellEggs(displayTransactionMessage); document.getElementById('sellprice')"
+									role="button">Pocket your BUSD</button>
+						</div>
+
+						<div class="altcolor">
+							<img alt="Digging" class="icon" src="images/BUSD.png">
+							<div>
+								<p>Contract: <span id="contract-balance">?</span></p>
+								<p>You: <span id="user-balance">?</span></p>
+							</div>
+						</div>
+						
+						<div class="altcolor">
+							<p style="font-size: 18px; font-weight: 400;">Earn 1% of the BUSD used to hire miners by anyone who starts with BUSD-Factory
+									using your referral link: <a id="playerreflink" onclick="copyRef()">?
+									<p></p><input id="copytextthing" style="display:none;" type="text" value="Hello Worldfdgerh"></a>
+
+						</div>
+						
+												
+						<div class="altcolor" style="display: block;">
+							<p style="font-size: 22px;">
+								<b>Factory information</b>
+							</p>
+							<p style="font-size: 18px; font-weight: 300;">	
+								<b>BUSD Factory pays 1% daily</b>, according to the current production efficiency rate.<br><br>
+								
+								The production efficiency rate rises and falls as you and other players hire workers, compound earnings and pocket BUSD.
+<br><br>
+The object of the game is hiring more workers, sooner and more often than other players. <br><br>
+								
+								This in turn earns you more BUSD faster.
+							</p>
+						</div>
+					
+						
+						<div class="altcolor" style="display: block;">
+							<p style="font-size: 22px;">
+								<b>Read before use</b>
+							</p>
+							<p style="font-size: 18px; font-weight: 300;">						
+								The principal deposit cannot be withdrawn, the only return users can get are daily dividends and referral rewards. Payments is possible only if contract balance have enough BUSD. <br><br>
+								
+								Please analyze the transaction history and balance of the smart contract before investing.<br><br>
+								<b>Low risk - Safe Profit - DYOR</b>
+							</p>
+						</div>
+						<div style="font-size: 10px; float: right;">Developed by <a href="https://www.communitydrive.network/" title="Smashicons">Community Drive Token</a> from <a href="https://www.communitydrive.network/" title="Flaticon">Community Drive</a></div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- scripts -->			
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/interface.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/web3.min.js"></script>
+			<script src="assets/js/main_eth.js"></script>
+			<script src="assets/js/crypto-js/4.0.0/crypto-js.min.js"></script>
+			
+
+</body>
+
+
+</html>
